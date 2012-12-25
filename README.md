@@ -1,7 +1,8 @@
 flaskTest
 =========
+examples from flask
+for personal flask learning
 
-FlaskTest
                         / MiniTwit /
 
            because writing todo lists is not fun
