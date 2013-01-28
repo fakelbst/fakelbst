@@ -1,4 +1,3 @@
-
 drop table if exists tags;
 create table tags (
   tag_id integer primary key autoincrement,
@@ -13,4 +12,5 @@ create table markpage (
   weblink text not null,
   pub_date integer
 );
+
 

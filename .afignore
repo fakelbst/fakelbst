@@ -1,4 +1,4 @@
 # ignore example directory
 /minitwit
 .gitignore
-
+.git
