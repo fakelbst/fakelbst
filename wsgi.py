@@ -19,6 +19,7 @@ def welcome():
 @app.route('/mark')
 def markpage():
     return render_template('mark.html')
+
 @app.route('/env')
 def env():
     return os.environ.get("VCAP_SERVICES", "{}")
