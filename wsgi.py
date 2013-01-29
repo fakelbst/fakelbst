@@ -20,6 +20,14 @@ def welcome():
 def markpage():
     return render_template('mark.html')
 
+@app.route('/about')
+def markpage():
+    return render_template('about.html')
+
+@app.route('/contact')
+def markpage():
+    return render_template('contact.html')
+
 @app.route('/env')
 def env():
     return os.environ.get("VCAP_SERVICES", "{}")
