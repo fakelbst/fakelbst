@@ -1,5 +1,5 @@
 <!doctype html>
-<title>fakelbst</title>
+<title>{% block title %}fakelbst{% endblock %}</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.css') }}">
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
 <script src="{{ url_for('static', filename='js/jquery-1.9.0.min.js') }}"></script>
@@ -11,7 +11,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/mark">Mark</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/lab">Lab</a></li>
         </ul>
         <h3 class="muted">fakelbst</h3>
 </div>
@@ -23,10 +23,13 @@
   <div class=body>
   {% block body %}{% endblock %}
   </div>
-  <div class=footer>
 
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+  <div class=footer>
   </div>
-    fakelbst &mdash; A Flask Application
+    <a href="/login">Log in</a>
   </div>
 </div>
 
