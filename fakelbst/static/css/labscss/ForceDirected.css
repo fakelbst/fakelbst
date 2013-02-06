@@ -1,4 +1,4 @@
-#inner-details {
+/*#inner-details {
   font-size:12px;
 }
 
@@ -14,7 +14,7 @@ span.name {
 }
 
 /*TOOLTIPS*/
-.tip {
+/*.tip {
    text-align: left;
    width:auto;
    max-width:500px;
@@ -24,4 +24,4 @@ span.name {
   font-size: 11px;
   text-align:center;
   margin-bottom:2px;
-}
+}*/
