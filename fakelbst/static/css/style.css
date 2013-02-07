@@ -5,3 +5,16 @@
 .container-narrow > hr {
     margin: 30px 0;
 }
+.masthead {
+    height : 60px;
+}
+.body {
+    margin: 0 auto;
+    max-width:760px;
+}
+.footer {
+    position : relative;
+}
+.footer-login {
+    float : right;
+}

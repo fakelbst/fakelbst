@@ -1,8 +1,9 @@
 from fakelbst import app
-from flask import Flask, render_template, Blueprint, g, session, abort
-from jinja2 import TemplateNotFound
+from flask import  render_template, Blueprint
+from fakelbst.models import models
 
 projects = Blueprint('fakelbst', __name__)
+app.config.from_pyfile('config.cfg', silent = True)
 
 @app.route('/')
 def welcome():
@@ -10,7 +11,9 @@ def welcome():
 
 @app.route('/mark')
 def markpage():
-    return render_template('mark.html')
+    #if not g.user:
+        #return redirect(url_for('public_mark'))
+    return render_template('mark.html', weblink=models.query_db('''select * from mark '''))
 
 @app.route('/about')
 def aboutpage():
@@ -25,7 +28,7 @@ def login():
     return render_template('login.html')
 
 @app.route('/labs/forcedirected')
-def login():
+def forcedirected():
     return render_template('/labs/ForceDirected.html')
 
 @app.route('/env')
@@ -39,11 +42,12 @@ def close_database(exception):
     if hasattr(top, 'sqlite_db'):
         top.sqlite_db.close()
 
+'''
 @app.before_request
 def before_request():
     g.user = None
     if 'tag_id' in session:
         g.user = query_db('select * from user where tag_id = ?',
                           [session['user_id']], one=True)
-
+'''
 

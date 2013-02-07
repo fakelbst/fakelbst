@@ -2,6 +2,16 @@
 {% block title %}Mark{% endblock %}
 {% block body %}
     <h3>Mark</h3>
+
+<ul class=messages>
+  {% for link in weblink %}
+  <li><strong><a href="{{ link.link }}">{{ link.title }}</a></strong>
+    {{ link.date }}
+  {% else %}
+    <li><em>There's no mark so far.</em>
+  {% endfor %}
+  </ul>
+
     <input type="text">
     <input type="text">
     <a class="btn" href="#">mark</a>
