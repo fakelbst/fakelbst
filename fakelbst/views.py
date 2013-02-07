@@ -31,14 +31,7 @@ def login():
 @app.route('/env')
 def env():
     return os.environ.get("VCAP_SERVICES", "{}")
-'''
-@app.route('/<lab>')
-def labs(lab):
-    try:
-        return render_template('labs/%s.html' % lab)
-    except TemplateNotFound:
-        abort(404)
-'''
+
 @app.teardown_appcontext
 def close_database(exception):
     """Closes the database again at the end of the request."""

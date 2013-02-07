@@ -6,5 +6,5 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'random'
 app.debug = True
 
-from fakelbst.controllers.todo import projects
+from views import projects
 app.register_blueprint(projects)
