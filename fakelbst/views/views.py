@@ -1,5 +1,4 @@
 import urllib
-import os
 from fakelbst import app
 from flask import  render_template, Blueprint, redirect, url_for
 from fakelbst.models import models
@@ -7,7 +6,7 @@ from fakelbst.models.mark import Mark
 from flask.views import MethodView
 from fakelbst.models.auth import *
 
-projects = Blueprint('fakelbst', __name__)
+projects = Blueprint('fakelbst', __name__, template_folder="templates")
 
 @app.route('/')
 def welcome():
