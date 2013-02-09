@@ -5,7 +5,7 @@ from flask.ext.mongoengine import MongoEngine
 
 app = Flask(__name__)
 
-app.config["MONGODB_SETTINGS"] = {"DB" : "fakelbst_myj226", "username" : "appfog", "password" : "64600353", "host" : "linus.mongohq.com", "port" : 10067}
+app.config["MONGODB_SETTINGS"] = {"DB" : "YOUR DB"}
 app.config['SECRET_KEY'] = 'random'
 
 db = MongoEngine(app)
