@@ -6,6 +6,5 @@ setup(name='fakelbst',
       author='Yijie Mao',
       author_email='example@example.com',
       url='http://www.python.org/sigs/distutils-sig/',
-      #install_requires=['Flask==0.9','uWsgi','flask_mongoengine'],
-      install_requires=[requirements.txt],
+      install_requires=['Flask==0.9', 'uWsgi', 'flask_mongoengine', 'BeautifulSoup'],
      )
