@@ -1,3 +1,4 @@
+uWsgi
 pymongo==2.1.1
 flask==0.9
 WTForms
