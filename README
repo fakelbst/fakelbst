@@ -53,3 +53,16 @@ Notes about setup.py
 
 Adding deps to the install_requires will have the openshift server actually
 install those deps at git push time.
+=======
+a flask application test on appfog
+https://www.appfog.com/
+
+the application live site
+http://fakelbst.hp.af.cm/
+http://www.fakelbst.tk
+
+mongodb server:
+https://www.mongohq.com/home
+
+free DNS server:
+http://www.dot.tk/
